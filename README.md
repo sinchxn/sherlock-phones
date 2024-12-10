@@ -22,7 +22,7 @@ Google Gemini API key
 
 1. Get the code:
 ```
-git clone https://github.com/yourusername/android-forensics-analyzer
+git clone https://github.com/sinchxm/sherlock-phones
 cd android-forensics-analyzer
 ```
 2. Set up dependencies:
