@@ -42,6 +42,11 @@ Run the analyzer:
 ```
 python main.py
 ```
+# 📱 Example Output
+Check out /Example Outputs directory to see a complete sample output from the tool. This directory includes:
+- HTML File showcasing a sample report of the extracted artifacts along with the AI-generated insights and recommendations.
+- Raw JSON data that was extracted from the device.
+
 # 📊 Output
 The tool generates two outputs:
 - An interactive HTML dashboard with visualizations, and an analysis report with an AI Forensic Investigator's insights.
