@@ -75,6 +75,20 @@ class AdvancedReportGenerator:
         return self.chart_config['risk_levels']['low']
 
     def generate_complete_report(self, data, file_analysis, network_analysis, communication_analysis):
+        # Read AI report
+        try:
+            with open('ai_report.txt', 'r', encoding='utf-8') as f:
+                ai_content = f.read()
+        except FileNotFoundError:
+            ai_content = 'AI Analysis report not found.'
+        except Exception as e:
+            ai_content = f'Error loading AI Analysis: {str(e)}'
+
+        except FileNotFoundError:
+            formatted_ai_content = '<p class="text-red-500">AI Analysis report not found.</p>'
+        except Exception as e:
+            formatted_ai_content = f'<p class="text-red-500">Error loading AI Analysis: {str(e)}</p>'
+            
         """Generate an ultra-comprehensive, interactive HTML forensic report"""
         try:
             # Process network data
