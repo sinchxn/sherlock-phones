@@ -1,0 +1,523 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <title>🕵️ Forensic Deep Dive Report</title>
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+                <style>
+                    @keyframes pulse { 
+                        0% { transform: scale(1); }
+                        50% { transform: scale(1.05); }
+                        100% { transform: scale(1); }
+                    }
+                    .risk-indicator { 
+                        animation: pulse 2s infinite;
+                    }
+                    .advanced-hover:hover { 
+                        transform: scale(1.02);
+                        box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+                        transition: all 0.3s ease;
+                    }
+                </style>
+            </head>
+            <body class="bg-gray-900 text-gray-100">
+                <div class="container mx-auto px-4 py-8">
+                    <!-- ORIGINAL SECTIONS START -->
+                    
+                    <!-- Header -->
+                    <header class="text-center mb-12">
+                        <h1 class="text-4xl font-bold text-red-500 animate-pulse">🔍 Advanced Forensic Analysis Report</h1>
+                        <p class="text-xl text-gray-400">Generated: 2024-12-09 03:14:48</p>
+                    </header>
+
+                    <!-- Original Device & Network Section -->
+                    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-xl advanced-hover">
+                            <h2 class="text-2xl font-semibold text-blue-400 mb-4">🖥️ Device Forensics</h2>
+                            <div class="space-y-2">
+                                <p><strong>Model:</strong> IV2201</p>
+                                <p><strong>Android Version:</strong> 13</p>
+                                <p><strong>Last Login:</strong> +1d17h41m44s103ms ago</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-xl advanced-hover">
+                            <h2 class="text-2xl font-semibold text-green-400 mb-4">📡 Network Threat Matrix</h2>
+                            <canvas id="networkSecurityChart" width="400" height="200"></canvas>
+                        </div>
+                    </section>
+
+                    <!-- Original Risk Analysis Section -->
+                    <section class="mt-12">
+                        <div class="bg-gray-800 p-8 rounded-lg shadow-2xl">
+                            <h2 class="text-3xl font-bold text-red-500 mb-6">🚨 Comprehensive Risk Analysis</h2>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="bg-gray-700 p-4 rounded risk-indicator">
+                                    <h3 class="text-xl font-semibold text-yellow-400">Network Risks</h3>
+                                    <p>Open Networks: 44</p>
+                                    <p>Vulnerable WEP: 0</p>
+                                </div>
+                                <div class="bg-gray-700 p-4 rounded risk-indicator">
+                                    <h3 class="text-xl font-semibold text-orange-400">File Anomalies</h3>
+                                    <p>Hidden Files: 784</p>
+                                    <p>Suspicious Files: 0</p>
+                                </div>
+                                <div class="bg-gray-700 p-4 rounded risk-indicator">
+                                    <h3 class="text-xl font-semibold text-purple-400">Communication Patterns</h3>
+                                    <p>Total Calls: 3000</p>
+                                    <p>Total Messages: 4175</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Original Communication Heatmap -->
+                    <section class="mt-12">
+                        <div class="bg-gray-800 p-8 rounded-lg">
+                            <h2 class="text-3xl font-bold text-blue-500 mb-6">📊 Interactive Communication Heatmap</h2>
+                            <canvas id="communicationHeatmap" width="600" height="300"></canvas>
+                        </div>
+                    </section>
+
+                    <!-- Original File Signatures Section -->
+                    <section class="mt-12">
+                        <div class="bg-gray-800 p-8 rounded-lg">
+                            <h2 class="text-3xl font-bold text-green-500 mb-6">🕵️ File Signature Anomalies</h2>
+                            <table class="w-full text-left">
+                                <thead>
+                                    <tr class="bg-gray-700">
+                                        <th class="p-3">File Path</th>
+                                        <th class="p-3">Declared Extension</th>
+                                        <th class="p-3">Actual Extension</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/EGR-500-1.mp3</td>
+                                        <td class="p-3 text-yellow-400">.mp3</td>
+                                        <td class="p-3 text-red-500">.pdf</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/IMG-20240908-WA0002.txt</td>
+                                        <td class="p-3 text-yellow-400">.txt</td>
+                                        <td class="p-3 text-red-500">.jpg</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/73efb7f14064c60d3e9cfa579de0235c.txt</td>
+                                        <td class="p-3 text-yellow-400">.txt</td>
+                                        <td class="p-3 text-red-500">.jpg</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/com.whatsapp_2.22.15.11-221511002_minAPI16(armeabi-v7a)(nodpi)_apkmirror.com.apk</td>
+                                        <td class="p-3 text-yellow-400">.apk</td>
+                                        <td class="p-3 text-red-500">.zip</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/test.txt</td>
+                                        <td class="p-3 text-yellow-400">.txt</td>
+                                        <td class="p-3 text-red-500">.jpg</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/tachiyomi-0-15-3.apk</td>
+                                        <td class="p-3 text-yellow-400">.apk</td>
+                                        <td class="p-3 text-red-500">.zip</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/spotify-8-7-44-968.apk</td>
+                                        <td class="p-3 text-yellow-400">.apk</td>
+                                        <td class="p-3 text-red-500">.zip</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/PAN CARD RAJENDRA PATIL</td>
+                                        <td class="p-3 text-yellow-400"></td>
+                                        <td class="p-3 text-red-500">.jpg</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/3.kra</td>
+                                        <td class="p-3 text-yellow-400">.kra</td>
+                                        <td class="p-3 text-red-500">.zip</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/Bank_letter</td>
+                                        <td class="p-3 text-yellow-400"></td>
+                                        <td class="p-3 text-red-500">.pdf</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/Rajendra PAN</td>
+                                        <td class="p-3 text-yellow-400"></td>
+                                        <td class="p-3 text-red-500">.pdf</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/PDC kanishka</td>
+                                        <td class="p-3 text-yellow-400"></td>
+                                        <td class="p-3 text-red-500">.pdf</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/pom 500 teach a topic.key</td>
+                                        <td class="p-3 text-yellow-400">.key</td>
+                                        <td class="p-3 text-red-500">.zip</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/kuukiyomi-standard-arm64-v8a-release.apk</td>
+                                        <td class="p-3 text-yellow-400">.apk</td>
+                                        <td class="p-3 text-red-500">.zip</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/sdcard/Download/CMM</td>
+                                        <td class="p-3 text-yellow-400"></td>
+                                        <td class="p-3 text-red-500">.pdf</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/EGR-500-1.mp3</td>
+                                        <td class="p-3 text-yellow-400">.mp3</td>
+                                        <td class="p-3 text-red-500">.pdf</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/IMG-20240908-WA0002.txt</td>
+                                        <td class="p-3 text-yellow-400">.txt</td>
+                                        <td class="p-3 text-red-500">.jpg</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/73efb7f14064c60d3e9cfa579de0235c.txt</td>
+                                        <td class="p-3 text-yellow-400">.txt</td>
+                                        <td class="p-3 text-red-500">.jpg</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/com.whatsapp_2.22.15.11-221511002_minAPI16(armeabi-v7a)(nodpi)_apkmirror.com.apk</td>
+                                        <td class="p-3 text-yellow-400">.apk</td>
+                                        <td class="p-3 text-red-500">.zip</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/test.txt</td>
+                                        <td class="p-3 text-yellow-400">.txt</td>
+                                        <td class="p-3 text-red-500">.jpg</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/tachiyomi-0-15-3.apk</td>
+                                        <td class="p-3 text-yellow-400">.apk</td>
+                                        <td class="p-3 text-red-500">.zip</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/spotify-8-7-44-968.apk</td>
+                                        <td class="p-3 text-yellow-400">.apk</td>
+                                        <td class="p-3 text-red-500">.zip</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/PAN CARD RAJENDRA PATIL</td>
+                                        <td class="p-3 text-yellow-400"></td>
+                                        <td class="p-3 text-red-500">.jpg</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/3.kra</td>
+                                        <td class="p-3 text-yellow-400">.kra</td>
+                                        <td class="p-3 text-red-500">.zip</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/Bank_letter</td>
+                                        <td class="p-3 text-yellow-400"></td>
+                                        <td class="p-3 text-red-500">.pdf</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/Rajendra PAN</td>
+                                        <td class="p-3 text-yellow-400"></td>
+                                        <td class="p-3 text-red-500">.pdf</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/PDC kanishka</td>
+                                        <td class="p-3 text-yellow-400"></td>
+                                        <td class="p-3 text-red-500">.pdf</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/pom 500 teach a topic.key</td>
+                                        <td class="p-3 text-yellow-400">.key</td>
+                                        <td class="p-3 text-red-500">.zip</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/kuukiyomi-standard-arm64-v8a-release.apk</td>
+                                        <td class="p-3 text-yellow-400">.apk</td>
+                                        <td class="p-3 text-red-500">.zip</td>
+                                    </tr>
+                                    
+                                    <tr class="border-b border-gray-700 hover:bg-gray-700">
+                                        <td class="p-3">/storage/emulated/0/Download/CMM</td>
+                                        <td class="p-3 text-yellow-400"></td>
+                                        <td class="p-3 text-red-500">.pdf</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- ORIGINAL SECTIONS END -->
+
+                    <!-- NEW SECTIONS START -->
+
+                    <!-- Enhanced Communication Analysis -->
+                    <section class="mt-12">
+                        <div class="bg-gray-800 p-8 rounded-lg shadow-xl">
+                            <h2 class="text-3xl font-bold text-yellow-500 mb-6">📱 Enhanced Communication Analysis</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-blue-400 mb-4">Call Patterns</h3>
+                                    <canvas id="callPatternsChart"></canvas>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-green-400 mb-4">Message Distribution</h3>
+                                    <canvas id="messageDistChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Network Deep Dive -->
+                    <section class="mt-12">
+                        <div class="bg-gray-800 p-8 rounded-lg shadow-xl">
+                            <h2 class="text-3xl font-bold text-indigo-500 mb-6">🌐 Network Security Deep Dive</h2>
+                            <div id="networkDeepDive" style="width: 100%; height: 400px;"></div>
+                        </div>
+                    </section>
+
+                    <script>
+                        // ORIGINAL CHARTS START
+                        
+                        // Original Network Security Chart
+                        var networkCtx = document.getElementById('networkSecurityChart').getContext('2d');
+                        new Chart(networkCtx, {
+                            type: 'pie',
+                            data: {
+                                labels: ['Open', 'WEP', 'WPA', 'WPA2'],
+                                datasets: [{
+                                    data: [
+                                        44,
+                                        0,
+                                        35,
+                                        33
+                                    ],
+                                    backgroundColor: [
+                                        'rgba(255, 99, 132, 0.8)', 
+                                        'rgba(255, 159, 64, 0.8)', 
+                                        'rgba(255, 205, 86, 0.8)', 
+                                        'rgba(75, 192, 192, 0.8)'
+                                    ]
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                    datalabels: {
+                                        color: 'white',
+                                        font: { weight: 'bold' }
+                                    }
+                                }
+                            }
+                        });
+
+                        // Original Communication Heatmap
+                        var heatmapCtx = document.getElementById('communicationHeatmap').getContext('2d');
+                        new Chart(heatmapCtx, {
+                            type: 'line',
+                            data: {
+                                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                                datasets: [
+                                    {
+                                        label: 'Incoming Calls',
+                                        data: [12, 19, 3, 5, 2, 3],
+                                        borderColor: 'rgb(75, 192, 192)',
+                                        tension: 0.1
+                                    },
+                                    {
+                                        label: 'Outgoing Calls',
+                                        data: [2, 3, 20, 5, 1, 4],
+                                        borderColor: 'rgb(255, 99, 132)',
+                                        tension: 0.1
+                                    }
+                                ]
+                            },
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                    title: { display: true, text: 'Communication Activity Heatmap' }
+                                }
+                            }
+                        });
+
+                        // ORIGINAL CHARTS END
+
+                        // NEW VISUALIZATIONS START
+
+                        // Enhanced Communication Analysis
+                        const callCtx = document.getElementById('callPatternsChart').getContext('2d');
+                        new Chart(callCtx, {
+                            type: 'bar',
+                            data: {
+                                labels: ['Call Distribution'],
+                                datasets: [
+                                    {
+                                        label: 'Incoming',
+                                        data: [959],
+                                        backgroundColor: 'rgba(75, 192, 192, 0.8)'
+                                    },
+                                    {
+                                        label: 'Outgoing',
+                                        data: [1059],
+                                        backgroundColor: 'rgba(255, 99, 132, 0.8)'
+                                    },
+                                    {
+                                        label: 'Missed',
+                                        data: [671],
+                                        backgroundColor: 'rgba(255, 206, 86, 0.8)'
+                                    }
+                                ]
+                            },
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                    legend: {
+                                        position: 'top',
+                                    },
+                                    title: {
+                                        display: true,
+                                        text: 'Call Type Distribution'
+                                    }
+                                },
+                                scales: {
+                                    y: {
+                                        beginAtZero: true
+                                    }
+                                }
+                            }
+                        });
+
+                        // Message Distribution Chart
+                        const msgCtx = document.getElementById('messageDistChart').getContext('2d');
+                        new Chart(msgCtx, {
+                            type: 'doughnut',
+                            data: {
+                                labels: ['Sent', 'Received'],
+                                datasets: [{
+                                    data: [
+                                        152,
+                                        4023
+                                    ],
+                                    backgroundColor: [
+                                        'rgba(54, 162, 235, 0.8)',
+                                        'rgba(75, 192, 192, 0.8)'
+                                    ]
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                    legend: {
+                                        position: 'top'
+                                    },
+                                    title: {
+                                        display: true,
+                                        text: 'Message Type Distribution'
+                                    }
+                                }
+                            }
+                        });
+
+                        // Network Deep Dive
+                        const networkDeepDive = echarts.init(document.getElementById('networkDeepDive'));
+                        networkDeepDive.setOption({
+                            tooltip: {
+                                trigger: 'axis',
+                                axisPointer: {
+                                    type: 'shadow'
+                                }
+                            },
+                            legend: {
+                                data: ['Networks', 'Risk Score'],
+                                textStyle: {
+                                    color: '#fff'
+                                }
+                            },
+                            xAxis: {
+                                data: ['WPA2', 'WPA', 'WEP', 'Open', 'Unknown'],
+                                axisLabel: {
+                                    color: '#fff'
+                                }
+                            },
+                            yAxis: [
+                                {
+                                    type: 'value',
+                                    name: 'Count',
+                                    nameTextStyle: {
+                                        color: '#fff'
+                                    },
+                                    axisLabel: {
+                                        color: '#fff'
+                                    }
+                                },
+                                {
+                                    type: 'value',
+                                    name: 'Risk Score',
+                                    max: 100,
+                                    nameTextStyle: {
+                                        color: '#fff'
+                                    },
+                                    axisLabel: {
+                                        color: '#fff'
+                                    }
+                                }
+                            ],
+                            series: [
+                                {
+                                    name: 'Networks',
+                                    type: 'bar',
+                                    data: [{"value": 33, "itemStyle": {"color": "#4CAF50"}}, {"value": 35, "itemStyle": {"color": "#2196F3"}}, {"value": 0, "itemStyle": {"color": "#FFC107"}}, {"value": 44, "itemStyle": {"color": "#F44336"}}, {"value": 48, "itemStyle": {"color": "#9E9E9E"}}]
+                                },
+                                {
+                                    name: 'Risk Score',
+                                    type: 'line',
+                                    yAxisIndex: 1,
+                                    data: [20, 40, 80, 100, 60]
+                                }
+                            ]
+                        });
+
+                        // Handle window resize for all charts
+                        window.addEventListener('resize', () => {
+                            networkDeepDive.resize();
+                        });
+                    </script>
+                </div>
+            </body>
+            </html>
+            
