@@ -38,7 +38,7 @@
                 "timestamp": 1682075532209,
                 "type": "REJECTED",
                 "normalized_number": "+91XX19021155",
-                "phone_account": "919XXXXX2011",
+                "phone_account": "91XXXXXX2011",
                 "matched_number": "93190XX155",
                 "is_read": true
             },
@@ -61,7 +61,7 @@
             {
                 "duration": "12",
                 "sim_id": "1",
-                "number": "+9180696XX000",
+                "number": "+9180XXXXX000",
                 "country": "IN",
                 "location": "Bangalore",
                 "number_type": "0",
@@ -70,7 +70,7 @@
                 "timestamp": 1682076911858,
                 "type": "INCOMING",
                 "normalized_number": "+91806XX70000",
-                "phone_account": "9191XXXX2011",
+                "phone_account": "91XXXXXX2011",
                 "matched_number": "80696XX000",
                 "is_read": true
             },
@@ -102,7 +102,7 @@
                 "timestamp": 1732820289675,
                 "type": "OUTGOING",
                 "normalized_number": "+1800XX37392",
-                "phone_account": "150XXXXX104",
+                "phone_account": "15XXXXXX104",
                 "matched_number": "800683XX92"
             }
         ],
