@@ -31,8 +31,8 @@ pip install -r requirements.txt
 ```
 3. Configure your API key:
 ```
-# In config.py
-GEMINI_API_KEY = "your-api-key-here"
+# In ai_report.py, line 6
+genai.configure(api_key="")
 ```
 ## Running an Analysis
 
