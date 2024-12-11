@@ -1,0 +1,214 @@
+{
+    "device_info": {
+        "username": "Kay",
+        "model": "IV2201",
+        "android_version": "13",
+        "last_login": "+1d17h41m44s103ms ago"
+    },
+    "communications": {
+        "calls": [
+            {
+                "duration": "0",
+                "sim_id": "1",
+                "number": "080223XX367",
+                "country": "IN",
+                "location": "Bangalore",
+                "number_type": "0",
+                "is_new": false,
+                "date": "2023-04-13 07:13:17",
+                "timestamp": 1681384397292,
+                "contact_name": "S R S Travels",
+                "type": "OUTGOING",
+                "normalized_number": "+91XXXXX74367",
+                "phone_account": "919XXXXX2011",
+                "contact_lookup_uri": "content://com.android.contacts/contacts/lookup/encoded?directory=2147483647#{\"display_name\":\"S R S Travels\"",
+                "matched_number": "08022374367",
+                "is_read": true
+            },
+            
+            {
+                "duration": "0",
+                "sim_id": "1",
+                "number": "+9193XX021155",
+                "country": "IN",
+                "location": "India",
+                "number_type": "0",
+                "is_new": false,
+                "date": "2023-04-21 07:12:12",
+                "timestamp": 1682075532209,
+                "type": "REJECTED",
+                "normalized_number": "+91XX19021155",
+                "phone_account": "919XXXXX2011",
+                "matched_number": "93190XX155",
+                "is_read": true
+            },
+            {
+                "duration": "73",
+                "sim_id": "1",
+                "number": "+9180XXX70000",
+                "country": "IN",
+                "location": "Bangalore",
+                "number_type": "0",
+                "is_new": false,
+                "date": "2023-04-21 07:32:39",
+                "timestamp": 1682076759270,
+                "type": "INCOMING",
+                "normalized_number": "+918XXX670000",
+                "phone_account": "91XXXXX72011",
+                "matched_number": "8069670000",
+                "is_read": true
+            },
+            {
+                "duration": "12",
+                "sim_id": "1",
+                "number": "+9180696XX000",
+                "country": "IN",
+                "location": "Bangalore",
+                "number_type": "0",
+                "is_new": false,
+                "date": "2023-04-21 07:35:11",
+                "timestamp": 1682076911858,
+                "type": "INCOMING",
+                "normalized_number": "+91806XX70000",
+                "phone_account": "9191XXXX2011",
+                "matched_number": "80696XX000",
+                "is_read": true
+            },
+            {
+                "duration": "0",
+                "sim_id": "1",
+                "number": "+91906XX56756",
+                "country": "IN",
+                "location": "India",
+                "number_type": "0",
+                "is_new": false,
+                "date": "2023-04-25 12:03:12",
+                "timestamp": 1682438592132,
+                "type": "MISSED",
+                "ring_time": "3",
+                "normalized_number": "+9190XX856756",
+                "phone_account": "919XXXXX2011",
+                "matched_number": "9XX7856756",
+                "is_read": true
+            },
+            {
+                "duration": "0",
+                "sim_id": "3",
+                "number": "8006XX7392",
+                "country": "US",
+                "number_type": "0",
+                "is_new": true,
+                "date": "2024-11-28 13:58:09",
+                "timestamp": 1732820289675,
+                "type": "OUTGOING",
+                "normalized_number": "+1800XX37392",
+                "phone_account": "150XXXXX104",
+                "matched_number": "800683XX92"
+            }
+        ],
+        "messages": [
+            {
+                "number": "JA-JioSvc",
+                "content": "Welcome to AT&T United States of America. \nEnjoy calling",
+                "type": "RECEIVED",
+                "date": "2024-12-07 13:14:52"
+            },
+            {
+                "number": "JG-JioSvc",
+                "content": "Welcome to Verizon Wireless United States of America. \nEnjoy calling",
+                "type": "RECEIVED",
+                "date": "2024-12-07 13:13:27"
+            },
+            {
+                "number": "JM-JioSvc",
+                "content": "Welcome to T-Mobile United States of America. \nEnjoy calling",
+                "type": "RECEIVED",
+                "date": "2024-12-07 09:32:26"
+            },
+            {
+                "number": "JX-OTTBUS",
+                "content": "Congratulations",
+                "type": "RECEIVED",
+                "date": "2022-07-20 06:50:40"
+            },
+            {
+                "number": "919110451583",
+                "content": "Dear Customer",
+                "type": "RECEIVED",
+                "date": "2022-07-20 05:17:13"
+            },
+            {
+                "number": "919110451583",
+                "content": "Dear Customer",
+                "type": "RECEIVED",
+                "date": "2022-07-20 04:06:04"
+            }
+        ]
+    },
+    "networks": [
+        {
+            "ssid": "IstanbulAirport",
+            "security": "TurkTelekomFree open"
+        },
+        {
+            "ssid": "IstanbulAirport",
+            "security": "TurkTelekomFree owe^"
+        },
+        {
+            "ssid": "@Mirasols",
+            "security": "Cafe Guest WiFi owe^"
+        },
+        {
+            "ssid": "ACT102651370733_5g",
+            "security": "wpa2-psk"
+        },
+        {
+            "ssid": "yale",
+            "security": "wireless owe^"
+        }
+    ],
+    "files": {
+        "photos": [],
+        "downloads": [
+            {
+                "name": "",
+                "date": "2024-11-23 00:04 .com_coloros_smartsidebar",
+                "size": "3488"
+            },
+            {
+                "name": "",
+                "date": "2024-12-07 16:27 hidden_folder",
+                "size": "3488"
+            },
+            {
+                "name": "500 teach a topic.key",
+                "date": "2024-03-24 19:28 pom",
+                "size": "10020489"
+            },
+            {
+                "name": "",
+                "date": "2022-01-01 00:02 update",
+                "size": "3488"
+            }
+        ],
+        "recent_activity": []
+    },
+    "hidden_files": [
+        {
+            "path": "/storage/emulated/0/Android/data/.nomedia",
+            "details": "-rw-rw---- 1 root sdcard_rw 0 2022-01-01 00:02 /storage/emulated/0/Android/data/.nomedia"
+        },
+        {
+            "path": "/storage/emulated/0/Android/data/com.kiloo.subwaysurf/cache/supersonicads/.nomedia",
+            "details": "-rw-rw---- 1 u0_a278 sdcard_rw 1 2024-08-03 10:01 /storage/emulated/0/Android/data/com.kiloo.subwaysurf/cache/supersonicads/.nomedia"
+        },
+        {
+            "path": "/storage/emulated/0/Android/data/com.kiloo.subwaysurf/cache/UnityAdsCache/.nomedia",
+            "details": "-rw-rw---- 1 u0_a278 sdcard_rw 0 2024-08-01 17:30 /storage/emulated/0/Android/data/com.kiloo.subwaysurf/cache/UnityAdsCache/.nomedia"
+        },
+        {
+            "path": "/storage/emulated/0/Android/data/com.viber.voip/files/.temp/.nomedia",
+            "details": "-rw-rw---- 1 u0_a279 sdcard_rw 0 2022-06-28 07:20 /storage/emulated/0/Android/data/com.viber.voip/files/.temp/.nomedia"
+        }
+    ]
+}
